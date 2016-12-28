@@ -39,3 +39,11 @@
         margin-top: 35px;
         width: 175px;
         height: 65px; }
+
+.signUp-page.login-page {
+  background: url("../imgs/bj.jpg") left center;
+  background-size: cover; }
+  .signUp-page.login-page .cloud {
+    margin-bottom: 0 !important; }
+    .signUp-page.login-page .cloud .ts-icon-cloud {
+      font-size: 100px !important; }

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/login.css"  />
   </head>
   <body ng-controller="indexController">  	
-  	<div id="ts-body" ng-class="{show:showAside}"> 
+  	<div id="ts-body" ng-class="{show:showAside}">
+		<div class="main-bj"></div>
   		<div class="index-box">
   			<div id="showAsideBtn">
 		  		<span class="glyphicon glyphicon-tasks" ng-click="showAsideFn()"></span>
@@ -26,9 +27,11 @@
   			</div>
   		</div>
   		<div class="list-group">  		
-  			<div class="list-group-item">登录</div>
-  			<div class="list-group-item">注册</div>
-  			<div class="list-group-item">个人中心</div>
+  			<a ng-click="toHomePage()" class="list-group-item">主页</a>
+  			<a class="list-group-item">朋友圈</a>
+  			<a class="list-group-item">个人中心</a>
+  			<a ng-click="toSigninPage()" class="list-group-item">登录</a>
+  			<a ng-click="toSignupPage()" class="list-group-item">注册</a>
   		</div>
   	</div>
   </body>

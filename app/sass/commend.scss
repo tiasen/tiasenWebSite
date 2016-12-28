@@ -8,10 +8,12 @@ body{
     top:0;
     bottom:0;
     width:100%;
-    margin-left:0px;
+    margin-left:0;
     transition:margin-left 0.5s;
     z-index: 6;
-    background:#000;
+    background:#000 url('../imgs/bj2.jpg') left center;
+    background-size:cover;
+
     .index-box{
         width:100%;
         height:100%;
@@ -19,7 +21,10 @@ body{
         #showAsideBtn{
             position:absolute;
             left:50px;
-            top:30px;        
+            top:30px;
+            &:hover{
+                cursor:pointer;
+            }
             span{
                 display:block;
                 font-size:16px;

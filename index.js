@@ -1,5 +1,7 @@
 var express = require('express'),
 	app = express();
+var config = require('./server/config/config');
+require('./server/base/mongoose.js');
 
 //app.set('view engine','jade');
 //app.set('views', __dirname + '/server/views');
@@ -10,6 +12,6 @@ var express = require('express'),
 //app.get('/login',function(req,res){
 //	req.render('')
 //})
-app.listen(5000,function(){
-	console.log('server start on localhost:5000');
+app.listen(config.port,function(){
+	console.log('server start on localhost:'+ config.port);
 });
