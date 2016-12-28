@@ -1,0 +1,32 @@
+{
+  "name": "tiasenwebsite",
+  "version": "0.0.1",
+  "description": "tiasenwebsite",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiasen/tiasenWebSite.git"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "mongodb"
+  ],
+  "author": "tiasen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiasen/tiasenWebSite/issues"
+  },
+  "homepage": "https://github.com/tiasen/tiasenWebSite#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
+  }
+}

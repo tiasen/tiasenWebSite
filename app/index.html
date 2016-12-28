@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="ts">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tiasen</title>
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css"  />
+    <link rel="stylesheet" href="lib/css/bootstrap.css"  />
+    <link rel="stylesheet" href="css/commend.css"  />
+    <link rel="stylesheet" href="css/login.css"  />
+  </head>
+  <body ng-controller="indexController">  	
+  	<div id="ts-body" ng-class="{show:showAside}"> 
+  		<div class="index-box">
+  			<div id="showAsideBtn">
+		  		<span class="glyphicon glyphicon-tasks" ng-click="showAsideFn()"></span>
+		  	</div>
+	    	<ui-view ></ui-view>
+  		</div>  		
+  	</div>
+  	<div id="aside">
+  		<div class="avatar">
+  			<div class="img">  	
+  				<span class="defaultAvatar glyphicon glyphicon-user"></span>
+	  			<img class="img-circle" src="imgs/660135506599744569.jpg" alt="" />
+  			</div>
+  		</div>
+  		<div class="list-group">  		
+  			<div class="list-group-item">登录</div>
+  			<div class="list-group-item">注册</div>
+  			<div class="list-group-item">个人中心</div>
+  		</div>
+  	</div>
+  </body>
+  <script	src="lib/js/jquery.js"></script>
+  <script src="lib/js/angular.js"></script>
+  <script src="lib/js/angular-ui-router.js"></script>
+  <script src="lib/js/ui-bootstrap-tpls.js"></script>
+  <script src="lib/js/bootstrap.js"></script>
+  <!--<script src="//cdn.bootcss.com/angular-touch/1.6.1/angular-touch.min.js"></script>-->
+  <script src="lib/js/angular-animate.min.js" ></script>
+  <script src="./js/app.js" ></script>
+  <script src="./js/controller/index-controller.js" ></script>
+</html>
