@@ -13,7 +13,7 @@
   	<div id="ts-body" ng-class="{show:showAside}">
 		<div class="main-bj"></div>
   		<div class="index-box">
-  			<div id="showAsideBtn">
+  			<div id="showAsideBtn" btn-move isShow="{{showAside}}">
 		  		<span class="glyphicon glyphicon-tasks" ng-click="showAsideFn()"></span>
 		  	</div>
 	    	<ui-view ></ui-view>
@@ -44,4 +44,5 @@
   <script src="lib/js/angular-animate.min.js" ></script>
   <script src="./js/app.js" ></script>
   <script src="./js/controller/index-controller.js" ></script>
+  <script src="./js/directive/directive.js" ></script>
 </html>

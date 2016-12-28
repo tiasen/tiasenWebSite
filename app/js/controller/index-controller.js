@@ -1,5 +1,6 @@
 angular.module('ts')
 	.controller('indexController',function($scope,$state){
+		$scope.showAside = false;
 		$scope.showAsideFn = function(){
 			$scope.showAside = !$scope.showAside;
 		};
