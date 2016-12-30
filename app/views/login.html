@@ -1,4 +1,5 @@
 <div class="login-page">
+	<!--<uib-alert type="danger" ng-if="" ></uib-alert>-->
 	<div class="login-box">
 		<div class="login-content">
 			<div class="cloud">
@@ -7,18 +8,17 @@
 			<div class="login-txt">
 				<h3>SIGN IN</h3>
 			</div>
-			<form role="form">
-				<div class="form-group">
-					<input type="text"	class="form-control input-lg" name="accont" placeholder="Enter Accont ..." />
-				</div>
-				<div class="form-group">
-					<input type="password" class="form-control input-lg" name="password" placeholder="Enter Password ..." />
-				</div>
-				<div class="ts-form-btn">
-					<button class="signInBtn btn btn-primary btn-lg center-block">Sign In</button>
-					<!--<button class="btn btn-default btn-lg pull-right">Sign Up</button>-->
-				</div>
-			</form>			
+			<form role="form" name="myForm">
+                <div class="form-group" ng-class="{'has-error':myForm.email.$dirty && myForm.email.$invalid,'has-success':myForm.email.$dirty && myForm.email.$valid}">
+                    <input type="text" data-toggle="tooltip" data-placement="right" ng-pattern="/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/" title="请输入邮箱" ng-model="email" class="form-control input-lg" name="email" placeholder="Enter Email ..." required/>
+                </div>
+                <div class="form-group"  ng-class="{'has-error':myForm.password.$dirty && myForm.password.$invalid,'has-success':myForm.password.$dirty && myForm.password.$valid}">
+                    <input type="password" title="请输入密码(6-18位)" ng-minlength="6" ng-maxlength="18" ng-model="pwd" class="form-control input-lg" name="password" placeholder="Enter Password ..." required/>
+                </div>                
+                <div class="ts-form-btn">
+                    <button type="button" ng-disabled="myForm.$invalid" ng-click="signinBtn()" class="signInBtn btn btn-success btn-lg center-block">Sign In</button>
+                </div>
+            </form>		
 		</div>
 	</div>
 </div>

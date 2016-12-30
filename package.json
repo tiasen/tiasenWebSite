@@ -26,8 +26,11 @@
     "gulp-sass": "^3.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
     "mongodb": "^2.2.16",
-    "mongoose": "^4.7.5"
+    "mongoose": "^4.7.5",
+    "sha1": "^1.1.1"
   }
 }

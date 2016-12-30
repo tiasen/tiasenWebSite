@@ -1,7 +1,11 @@
 var express = require('express'),
 	app = express();
 var config = require('./server/config/config');
-require('./server/base/mongoose.js');
+require('./server/mongoose.js');
+
+require('./server/api/api')(app);
+
+app.use(express.static('app'));
 
 //app.set('view engine','jade');
 //app.set('views', __dirname + '/server/views');
